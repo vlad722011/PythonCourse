@@ -19,7 +19,7 @@ if n < m:
 else:
     min = m
 
-if (((k == n) or (k == m) or ((k % n) == 0) or (k % m) == 0) & (k >= min)):
+if ((((k % n) == 0) or (k % m) == 0) & (k >= min)):
     print('YES, so many slices can be broken off')
 else:
     print('NO, such a number of slices cannot be broken off')

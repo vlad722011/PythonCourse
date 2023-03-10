@@ -15,29 +15,23 @@
 # это может быть и 4 и 8 цифр в номере)
 
 print('Enter the ticket number with an even number of digits in the number')
-number = int(input())
+number = input()
 
-copyOfNumber = number
+lengthNumber = len(number)
+count = lengthNumber // 2
+i = lengthNumber - 1
+
 sum1 = 0
+while (i >= count):
+    sum1 += int(number[i])
+    i -= 1
+
 sum2 = 0
-count = 0
-
-while copyOfNumber > 0:
-    copyOfNumber = copyOfNumber // 10
-    count += 1
-
-count1 = count2 = count // 2
-for i in range(count1):
-    sum1 += number % 10
-    number = number // 10
-
-for i in range(count2):
-    sum2 += number % 10
-    number = number // 10
+while (i >= 0):
+    sum2 += int(number[i])
+    i -= 1
 
 if sum1 == sum2:
     print('YES, ticket happy.')
 else:
-     print('NO, ticket is not lucky.')    
-
-
+    print('NO, ticket is not lucky.')
