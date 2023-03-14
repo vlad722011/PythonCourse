@@ -14,7 +14,7 @@ while (fiboNext < n):
     fiboNext = fiboFirst + fiboSecond
     count = count + 1
     if(fiboNext == n):
-        print(count)
+        print('Число {} является {} числом в ряду Фибоначи'.format(n,count))
 if(fiboNext != n):
-    print(-1)   
+    print('"-1", А это значит, что введенное число {} не является числом ряда Фибоначи'.format(n))   
 
