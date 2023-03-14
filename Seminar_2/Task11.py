@@ -4,17 +4,17 @@
 
 print('Введите число Фибоначи:')
 n = int(input())
-fiboFirst = 0
-fiboSecond = 1
-fiboNext = fiboFirst + fiboSecond
+fibo_first = 0
+fibo_second = 1
+fibo_next = fibo_first + fibo_second
 count = 3
-while (fiboNext < n):
-    fiboFirst = fiboSecond
-    fiboSecond = fiboNext
-    fiboNext = fiboFirst + fiboSecond
+while (fibo_next < n):
+    fibo_first = fibo_second
+    fibo_second = fibo_next
+    fibo_next = fibo_first + fibo_second
     count = count + 1
-    if(fiboNext == n):
+    if(fibo_next == n):
         print('Число {} является {} числом в ряду Фибоначи'.format(n,count))
-if(fiboNext != n):
+if(fibo_next != n):
     print('"-1", А это значит, что введенное число {} не является числом ряда Фибоначи'.format(n))   
 
