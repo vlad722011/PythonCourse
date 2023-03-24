@@ -4,13 +4,13 @@
 # И сгенерирует ошибку, если на вход пришла невалидная строка.
 # Пояснения: Если символ встречается 1 раз, он остается без изменений; Если символ повторяется более 1 раза, к нему
 # добавляется количество повторений.
-# creating a new dictionary
+
 
 #input_str = 'AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB'
 input_str = 'AAAABBBCCXYZDDDDEEEFFGGGKLRDYUIKKKFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB'
 print('Входящая строка:- {}'.format(input_str))
 
-# В первой функции из водящей строки получим временную строку, в которой символы будут идти без повторов.
+# В первой функции из входящей строки получим временную строку, в которой символы будут идти без повторов.
 def f(col):
     output_str_temp = input_str[0]
     index_output_str_temp = 0
@@ -23,7 +23,7 @@ def f(col):
             output_str_temp += input_str[i]
     return output_str_temp
 
-# Функция,которая вернет список чисел. Числа списка укажут кличество повторов символов входящей строки.
+# Функция, которая вернет список чисел. Числа списка укажут количество повторов символов входящей строки.
 def f1(col):
     char_count = []
     count = 0
